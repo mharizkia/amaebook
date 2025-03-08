@@ -9,12 +9,12 @@
                 </svg>
             </div>
             <input type="query" id="default-search" name="query" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Author" required />
-            <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+            <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Search</button>
         </div>
     </form>
     <div class="container mx-auto mt-8">
         <div class="bg-linear-to-b from-amber-950 to-black to-15% shadow-md rounded-lg p-6">
-            <h1 class="text-center font-bold font-[Open-Sans] text-2xl text-white">Author</h1>
+            <h1 class="text-center font-bold font-[Open-Sans] text-2xl text-white mb-4">Author</h1>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 @foreach($authors as $author)
                     <div class="bg-gray-100 p-4 rounded-lg">

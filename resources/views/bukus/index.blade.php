@@ -1,4 +1,5 @@
 <x-layout2>
+
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <x-slot name="header">

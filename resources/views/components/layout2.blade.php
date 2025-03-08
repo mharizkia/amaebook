@@ -7,6 +7,14 @@
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <title>AmA e-Book</title>
+
+        <style>
+    .hs 
+        {
+    overflow:scroll;
+    overflow-x:hidden;
+    }
+    </style>
 </head>
     <body class="bg-contain bg-repeat bg-[url(/images/collage.png)]">
         @include('layouts.navigation2')
