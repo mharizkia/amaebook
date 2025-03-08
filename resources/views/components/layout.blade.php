@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <title>AmA e-Book</title>
+</head>
+    <body class="bg-contain bg-[url(/images/test.gif)]">
+        @include('layouts.navigation')
+
+        @isset($header)
+        <header>
+            <div class="mx-auto py-6 px-4 sm:px-6 lg:px-8 bg-white">
+                {{ $header }}
+            </div>
+        </header>
+        @endisset
+
+
+        <main class="container mx-auto px-4 sm:px-6 lg:px-8">
+            {{ $slot }}
+        </main>
+    </body>
+</html>
