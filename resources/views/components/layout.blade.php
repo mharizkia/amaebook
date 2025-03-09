@@ -8,13 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <title>AmA e-Book</title>
 
-    <style>
-    .hs 
-        {
-    overflow:scroll;
-    overflow-x:hidden;
-    }
-    </style>
+
 </head>
     <body class="bg-contain bg-[url(/images/test.gif)]">
         @include('layouts.navigation')
