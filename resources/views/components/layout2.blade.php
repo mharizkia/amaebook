@@ -8,20 +8,13 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <title>AmA e-Book</title>
 
-        <style>
-    .hs 
-        {
-    overflow:scroll;
-    overflow-x:hidden;
-    }
-    </style>
 </head>
     <body class="bg-contain bg-repeat bg-[url(/images/collage.png)]">
         @include('layouts.navigation2')
 
         @isset($header)
         <header>
-            <div class="mx-auto py-6 px-4 sm:px-6 lg:px-8 bg-black">
+            <div class="mx-auto py-6 px-4 sm:px-6 lg:px-8 bg-white">
                 {{ $header }}
             </div>
         </header>

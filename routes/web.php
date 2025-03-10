@@ -14,7 +14,9 @@ Route::get('/home/buku/{id}', [HomeController::class, 'bukushow'])->name('welcom
 Route::get('/home/author/{id}', [HomeController::class, 'authorshow'])->name('welcome.authorshow');
 Route::get('/search', [HomeController::class, 'search'])->name('welcome.search');
 
-Route::get('/dashboard', [DashboardController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
+Route::middleware('auth', 'admin')->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -22,7 +24,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::middleware('auth')->group(function () {
+Route::middleware('auth', 'admin')->group(function () {
     Route::get('/authors', [AuthorController::class, 'index'])->name('authors.index');
     Route::get('/authors/create', [AuthorController::class, 'create'])->name('authors.create');
     Route::post('/authors', [AuthorController::class, 'store'])->name('authors.store');
@@ -32,7 +34,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/authors/{id}', [AuthorController::class, 'destroy'])->name('authors.destroy');
 });
 
-Route::middleware('auth')->group(function () {
+Route::middleware('auth', 'admin')->group(function () {
     Route::get('/bukus', [BukuController::class, 'index'])->name('bukus.index');
     Route::post('/bukus', [BukuController::class, 'store'])->name('bukus.store');
     Route::get('/bukus/{id}', [BukuController::class, 'show'])->name('bukus.show');

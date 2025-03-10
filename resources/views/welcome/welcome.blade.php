@@ -1,8 +1,4 @@
 <x-layout>
-<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-
-
 
 <div id="default-carousel" class="relative w-full" data-carousel="slide">
     <!-- Carousel wrapper -->
@@ -80,7 +76,7 @@
 
     <footer class="bg-black max-w-full mx-auto py-6 px-4 sm:px-6 lg:px-8 mt-4">
             <div class="text-center text-white">
-                TESTER
+                © 2025
             </div>
     </footer>
 </x-layout>

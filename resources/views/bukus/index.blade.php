@@ -4,7 +4,7 @@
 <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <x-slot name="header">
         <div class="grid grid-cols-2 gap-4 ">
-            <h2 class="font-semibold text-xl text-white leading-tight pt-2">
+            <h2 class="font-semibold text-xl text-black leading-tight pt-2">
                 {{ __('Daftar Buku') }}
             </h2>
 

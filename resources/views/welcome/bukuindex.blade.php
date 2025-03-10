@@ -15,27 +15,32 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-linear-to-b from-amber-950 to-black to-15% overflow-hidden shadow-xl sm:rounded-lg p-6">
                 <h1 class="text-center font-bold font-[Open-Sans] text-2xl text-white">Genre</h1>
-                <!-- Looping Genre dan Buku -->
                 @foreach($bukus as $genre => $books)
                     <div class="mb-8">
                         <h3 class="text-xl font-semibold mb-4 text-white">{{ $genre }}</h3>
                         <div class="overflow-x-auto">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 min-w-full">
-                            @foreach($books as $buku)
-                                <div class="relative bg-gray-100 p-4 rounded-lg group scale-90">
-                                    <a href="{{ route('welcome.bukushow', $buku->id) }} " class="block relative">
-                                        <img src="{{ asset('images/' . $buku->gambar) }}" alt="{{ $buku->judul }}" class="rounded-lg shadow-lg w-full h-full object-cover transition-transform transform group-hover:scale-105" title="{{ $buku->judul }}">
-                                        <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:scale-105">
-                                            <span class="text-white text-lg font-semibold text-center">{{ $buku->judul }} by {{ $buku->author->nama }} </span>
-                                        </div>
-                                    </a>
-                                </div>
-                            @endforeach
-                        </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 min-w-full">
+                                @foreach($books as $buku)
+                                    <div class="relative bg-gray-100 p-4 rounded-lg group scale-90">
+                                        <a href="{{ route('welcome.bukushow', $buku->id) }} " class="block relative">
+                                            <img src="{{ asset('images/' . $buku->gambar) }}" alt="{{ $buku->judul }}" class="rounded-lg shadow-lg w-full h-full object-cover transition-transform transform group-hover:scale-105" title="{{ $buku->judul }}">
+                                            <div class="absolute inset-0 bg-black/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:scale-105">
+                                                <p class="text-white text-lg font-semibold text-center">{{ $buku->judul }} by {{ $buku->author->nama }} </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                @endforeach
+                            </div>
                         </div>
                     </div>
                 @endforeach
             </div>
         </div>
     </div>
+
+    <footer class="bg-black max-w-full mx-auto py-6 px-4 sm:px-6 lg:px-8 mt-4">
+        <div class="text-center text-white">
+            © 2025
+        </div>
+    </footer>
 </x-layout>
