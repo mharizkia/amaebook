@@ -7,7 +7,6 @@
             <h2 class="font-semibold text-xl text-black leading-tight pt-2">
                 {{ __('Daftar Buku') }}
             </h2>
-
                 <div class="flex justify-end">
                     @if ($errors->any())
                         <div class="bg-red-100 text-red-700 p-4 mb-4">
@@ -106,7 +105,7 @@
                     <div class="w-64 flex-shrink-0 transform transition-transform hover:scale-105">
                         <a href="{{ route('bukus.show', $buku->id) }} " class="block relative group">
                             <img src="{{ asset('images/' . $buku->gambar) }}" alt="{{ $buku->judul }}" class="rounded-lg shadow-lg w-full h-full object-cover transition-transform transform group-hover:scale-105" title="{{ $buku->judul }}">
-                            <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:scale-105">
+                            <div class="absolute inset-0 bg-black/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:scale-105">
                                 <span class="text-white text-lg font-semibold text-center">{{ $buku->judul }} by {{ $buku->author->nama }} </span>
                             </div>
                         </a>
