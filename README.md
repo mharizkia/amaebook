@@ -1,4 +1,4 @@
-<img src="https://ibb.co.com/KcV7qxnV">
+![Image](https://github.com/user-attachments/assets/96d58f31-882f-473c-9a8c-feaf7673ac1b)
 
 # AmA e-Book
 
