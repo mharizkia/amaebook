@@ -1,4 +1,4 @@
-<img src="/images/web.png">
+<img src="https://ibb.co.com/KcV7qxnV">
 
 # AmA e-Book
 
