@@ -1,3 +1,5 @@
+<img src="/images/web.png">
+
 # AmA e-Book
 
 AmA e-Book is a website that uses laravel framework for finding e-Book found on the internet. The name AmA e-Book is play on words [Amazon kindle](https://www.amazon.com/kindle-dbs/storefront) which is the idea for this website came from and also take inspiration from [Gramedia](https://www.amazon.com/kindle-dbs/storefront).
