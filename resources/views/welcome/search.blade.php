@@ -1,5 +1,6 @@
 <x-layout>
     <x-slot name="header">
+        <!--Pencarian-->
         <form method="GET" action="{{ route('welcome.search') }}" class="max-w-md mx-auto my-3">   
             <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
             <div class="relative">
@@ -14,16 +15,15 @@
         </form>
     </x-slot>
 
-
-
+    <!--Hasil Pencarian-->
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-            <h2 class="font-semibold text-xl text-black leading-tight pt-2 text-center">
+            <div class="bg-indigo-950 overflow-hidden shadow-sm sm:rounded-lg">
+            <h2 class="font-bold text-xl text-white leading-tight pt-2 text-center mt-4">
                 {{ __('Hasil Pencarian untuk: ') }} "{{ $query }}"
             </h2>
-                <div class="p-6 bg-linear-to-b from-white to-amber-950 to-5% border-b-2 shadow-lg border-black">
-                    
+                <div class="p-6 bg-indigo-950 border-b-2 shadow-lg border-black">
+                    <!--Buku-->
                     <h3 class="text-xl font-semibold mb-4 text-white">Buku</h3>
                     @if($bukus->isNotEmpty())
                         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -39,7 +39,7 @@
                     @else
                         <p class="text-center text-white">Tidak ada buku yang ditemukan.</p>
                     @endif
-
+                    <!--Author-->
                     <h3 class="text-xl font-semibold mt-8 mb-4 text-white">Penulis</h3>
                     @if($authors->isNotEmpty())
                         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -55,15 +55,8 @@
                     @else
                         <p class="text-center text-white">Tidak ada penulis yang ditemukan.</p>
                     @endif
-
                 </div>
             </div>
         </div>
     </div>
-
-    <footer class="bg-black max-w-full mx-auto py-6 px-4 sm:px-6 lg:px-8 mt-4">
-        <div class="text-center text-white">
-            © 2025
-        </div>
-    </footer>
 </x-layout>

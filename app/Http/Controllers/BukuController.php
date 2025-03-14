@@ -11,14 +11,11 @@ use Illuminate\Support\Facades\Storage;
 
 class BukuController extends Controller
 {
-    public function __construct()
-    {
-        
-    }
 
     public function index()
     {
-        $bukus = Buku::with('author')->get();
+        $bukus = Buku::orderBy('rilis', 'DESC')->with('author')->get();
+        $bukus = Buku::paginate(4);
         $authors = Author::all();
 
         return view('bukus.index', compact('bukus','authors'));

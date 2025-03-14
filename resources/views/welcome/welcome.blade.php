@@ -75,9 +75,4 @@
         </div>
     </div>
 
-    <footer class="bg-black max-w-full mx-auto py-6 px-4 sm:px-6 lg:px-8 mt-4">
-            <div class="text-center text-white">
-                © 2025
-            </div>
-    </footer>
 </x-layout>

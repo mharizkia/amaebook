@@ -27,7 +27,7 @@ class HomeController extends Controller
 
     public function authorindex()
     {
-        $authors = Author::all();
+        $authors = Author::paginate(4);
 
         return view('welcome.authorindex', compact('authors'));
     }

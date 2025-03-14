@@ -71,8 +71,10 @@
             </div>
     </x-slot>
 
-    <div class="container mx-auto mt-8">
-        <div class="bg-white shadow-md rounded-lg p-6">
+    <div class="container mx-auto mt-8 grid grid-cols-1 content-center"> 
+        <div class="bg-slate-950 shadow-md rounded-lg p-6">
+            <h1 class="text-xl text-white text-center">List of Authors</h1>
+            <hr class="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 @foreach($authors as $author)
                     <div class="bg-gray-100 p-4 rounded-lg">
@@ -82,6 +84,9 @@
                         <h3 class="text-lg font-semibold text-gray-800 mt-4">{{ $author->nama }}</h3>
                     </div>
                 @endforeach
+            </div>
+            <div class="mt-4 ">
+                {{ $authors->links() }}
             </div>
         </div>
     </div>

@@ -4,7 +4,7 @@
             {{ __('Detail Buku') }}
         </h2>
     </x-slot>
-
+    <!--Detail Buku-->
     <div class="relative container mx-auto mt-9 ml-3">
         <div class="bg-gradient-to-l from-black from-70% via-amber-950 via-5% to-gray-200 to-5% shadow-md rounded-lg p-6 border-2">
             <div class="max-w-8xl mx-auto px-2 sm:px-6 lg:px-8"> 
@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-
+    <!--Genre Sama-->
     @if($genres->count() > 0)
         <div class="mt-10 bg-gray-950 rounded-sm">
             <h4 class="text-xl text-center text-gray-100 font-semibold pt-4">Buku dengan Genre yang Sama: {{ $buku->genre }}</h4>
@@ -53,10 +53,4 @@
             </div>
         </div>
     @endif
-
-    <footer class="bg-black max-w-full mx-auto py-6 px-4 sm:px-6 lg:px-8 mt-4">
-            <div class="text-center text-white">
-                © 2025
-            </div>
-    </footer>
 </x-layout>

@@ -1,5 +1,5 @@
 <x-layout>
-<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+<!--Detail Author-->
     <div class="relative container mx-auto mt-9 ml-3">
         <div class="bg-gradient-to-l from-black from-70% via-amber-950 via-5% to-gray-200 to-5% shadow-md rounded-lg p-6 border-2">
             <div class="max-w-8xl mx-auto px-2 sm:px-6 lg:px-8"> 
@@ -9,7 +9,6 @@
                 <div class="md:w-1/3">
                     <img src="{{ asset('images/' . $author->gambar) }}" alt="{{ $author->nama }}" class="shadow-lg w-70 h-85 transition delay-100 duration-300 ease-in-out hover:-translate-y-0.5 hover:scale-100">
                 </div>
-
                 <div class="md:w-2/3 mt-4 md:mt-0 text-white">
                     <p class="text-lg"><strong>Tanggal Lahir:</strong> {{ $author->birth }}</p>
                     <p class="text-lg mt-2"><strong>Tempat Lahir:</strong> {{ $author->tempat }}</p>
@@ -35,10 +34,4 @@
             </div>
         </div>
     </div>
-
-    <footer class="bg-black max-w-full mx-auto py-6 px-4 sm:px-6 lg:px-8 mt-4">
-        <div class="text-center text-white">
-            © 2025
-        </div>
-    </footer>
 </x-layout>
