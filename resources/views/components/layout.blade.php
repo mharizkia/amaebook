@@ -10,7 +10,7 @@
     <title>AmA e-Book</title>
     
 </head>
-    <body class="bg-contain bg-[url(/images/test.gif)]">
+    <body class="flex flex-col h-screen bg-contain bg-[url(/images/test.gif)]">
         @include('layouts.navigation')
 
         @isset($header)
@@ -22,14 +22,17 @@
         @endisset
 
 
-        <main class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <main class="container mx-auto px-4 sm:px-6 lg:px-8 mb-auto">
             {{ $slot }}
         </main>
+
+
+        <footer class="bg-black max-w-full py-4">
+            <div class="text-center text-white">
+                © 2025
+            </div>
+        </footer>
+
     </body>
 
-    <footer class="bg-black max-w-full mx-auto py-6 px-4 sm:px-6 lg:px-8 mt-4">
-        <div class="text-center text-white">
-            © 2025
-        </div>
-    </footer>
 </html>
