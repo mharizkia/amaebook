@@ -64,4 +64,4 @@ Access the website with this link 127.0.0.1:8000
 
 ## 🔗 Links
 
-<img src="https://github.com/user-attachments/assets/74e71ff9-bd48-4295-8a79-4e5d3ca6c262" width="200" height="200">
+<img src="https://github.com/user-attachments/assets/74e71ff9-bd48-4295-8a79-4e5d3ca6c262" width="100" height="100">
