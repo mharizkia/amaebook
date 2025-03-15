@@ -1,5 +1,5 @@
 ![Image](https://github.com/user-attachments/assets/96d58f31-882f-473c-9a8c-feaf7673ac1b)
-<img src="https://github.com/user-attachments/assets/74e71ff9-bd48-4295-8a79-4e5d3ca6c262">
+
 # AmA e-Book
 
 AmA e-Book is a website that uses laravel framework for finding e-Book found on the internet. The name AmA e-Book is play on words [Amazon kindle](https://www.amazon.com/kindle-dbs/storefront) which is the idea for this website came from and also take inspiration from [Gramedia](https://www.amazon.com/kindle-dbs/storefront).
