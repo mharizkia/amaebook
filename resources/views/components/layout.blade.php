@@ -29,7 +29,7 @@
 
         <footer class="bg-black max-w-full py-4">
             <div class="text-center text-white">
-                © 2025
+                © AmA e-Book 2025
             </div>
         </footer>
 
