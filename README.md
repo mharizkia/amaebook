@@ -92,4 +92,4 @@ Access the website with this link 127.0.0.1:8000
 
 ## Follow Me 
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/600px-Instagram_logo_2022.svg.png" width="100" height="100">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/600px-Instagram_logo_2022.svg.png" width="50" height="50">
