@@ -64,7 +64,7 @@ Access the website with this link 127.0.0.1:8000
 
 ## Use Case Diagram
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/a711eeac-f034-448a-aa95-9f3a59c3a33b" width="600" height="400">
+    <img src="https://github.com/user-attachments/assets/a711eeac-f034-448a-aa95-9f3a59c3a33b" width="700" height="400">
 </p>
 
 ## Class Diagram
