@@ -2,7 +2,7 @@
 
 # AmA e-Book
 
-AmA e-Book is a simple website that uses [Laravel 12](https://laravel.com/docs/12.x/releases) framework for finding e-Book found on the internet. The name AmA e-Book is a play on words of [Amazon kindle](https://www.amazon.com/kindle-dbs/storefront) which is the idea for this website came from and also take an inspiration from [Gramedia](https://www.gramedia.com) style of frontend.
+AmA e-Book is a simple website that uses [Laravel 12](https://laravel.com/docs/12.x/releases) framework for finding e-Book found on the internet. The name AmA e-Book is a play on words of [Amazon kindle](https://www.amazon.com/kindle-dbs/storefront) which is the idea for this website came from and also take an inspiration from [Gramedia](https://www.gramedia.com) style on the frontend.
 This project uses [Laravel 12](https://laravel.com/docs/12.x/releases) and Laravel Breeze for the authentication.
 
 ## 
@@ -92,4 +92,6 @@ Access the website with this link 127.0.0.1:8000
 
 ## Follow Me 
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/600px-Instagram_logo_2022.svg.png" width="50" height="50"> @mharizkiaig7
+<a href="https://www.instagram.com/mharizkiaig7/">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/600px-Instagram_logo_2022.svg.png" width="50" height="50">
+</a>
