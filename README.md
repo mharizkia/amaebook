@@ -6,9 +6,14 @@ AmA e-Book is a website that uses laravel framework for finding e-Book found on 
 This project uses Laravel Breeze for the authentication.
 
 This project uses [Laravel 12](https://laravel.com/docs/12.x/releases)
+
+<h1 align="center">Homepage of AmA e-Book</h1>
+
 <p align="center">
     <img src="https://github.com/user-attachments/assets/96ae22b9-6c36-481f-a059-94278a30ce40">
 </p>
+
+
 ## Installation
 
 1. Clone the project
