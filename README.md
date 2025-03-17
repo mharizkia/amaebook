@@ -89,3 +89,7 @@ Access the website with this link 127.0.0.1:8000
 <p align="center">
     <img src="https://github.com/user-attachments/assets/f890dc32-aa84-49da-a242-dd39167807a0" width="400" height="800">
 </p>
+
+## Follow Me 
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/600px-Instagram_logo_2022.svg.png" width="200" height="200">
