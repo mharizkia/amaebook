@@ -69,3 +69,8 @@ Access the website with this link 127.0.0.1:8000
 <p align="center">
     <img src="https://github.com/user-attachments/assets/255e3273-5db3-4b36-8aed-61a52c8028c1">
 </p>
+
+## Activity Diagram
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/f890dc32-aa84-49da-a242-dd39167807a0">
+</p>
