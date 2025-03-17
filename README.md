@@ -64,15 +64,15 @@ Access the website with this link 127.0.0.1:8000
 
 ## Use Case Diagram
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/a711eeac-f034-448a-aa95-9f3a59c3a33b" width="200" height="200">
+    <img src="https://github.com/user-attachments/assets/a711eeac-f034-448a-aa95-9f3a59c3a33b" width="600" height="400">
 </p>
 
 ## Class Diagram
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/255e3273-5db3-4b36-8aed-61a52c8028c1">
+    <img src="https://github.com/user-attachments/assets/255e3273-5db3-4b36-8aed-61a52c8028c1" width="400" height="400">
 </p>
 
 ## Activity Diagram
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/f890dc32-aa84-49da-a242-dd39167807a0">
+    <img src="https://github.com/user-attachments/assets/f890dc32-aa84-49da-a242-dd39167807a0" width="400" height="400">
 </p>
