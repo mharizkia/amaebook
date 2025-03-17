@@ -4,7 +4,9 @@
 
 AmA e-Book is a simple website that uses [Laravel 12](https://laravel.com/docs/12.x/releases) framework for finding e-Book found on the internet. The name AmA e-Book is a play on words of [Amazon kindle](https://www.amazon.com/kindle-dbs/storefront) which is the idea for this website came from and also take an inspiration from [Gramedia](https://www.gramedia.com) style of frontend.
 This project uses [Laravel 12](https://laravel.com/docs/12.x/releases) and Laravel Breeze for the authentication.
-<hr>
+
+## 
+
 <h3 align="center">Homepage of AmA e-Book</h3>
     <p align="center">
         <img src="https://github.com/user-attachments/assets/96ae22b9-6c36-481f-a059-94278a30ce40">
