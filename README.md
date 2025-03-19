@@ -56,11 +56,13 @@ This project uses [Laravel 12](https://laravel.com/docs/12.x/releases) and Larav
 ```bash
     php artisan db:seed
 ```
-This seeding is for admin login
-```
-Username : admin@example.com
-Password : admin123
-```
+<ul>
+    This seeding is for admin login
+    <ul>
+        <li>Username : admin@example.com</li>
+        <li>Password : admin123</li>
+    </ul>
+</ul>
 
 8. Install npm and run
 ```bash
@@ -73,7 +75,11 @@ Password : admin123
     php artisan serve
 ```
 
-Access the website with this link 127.0.0.1:8000
+#### Access the website with this link 127.0.0.1:8000 or you can edit inside the .env file at APP_URL (as shown below) the url you want with .test at the end of the url
+
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/3e23db64-bff5-4737-85dc-606d243562b6">
+</p>
 
 ## Use Case Diagram
 <p align="center">
