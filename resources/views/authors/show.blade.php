@@ -70,13 +70,47 @@
                             </div>
                         </div>
                     </div>
-                    <form action="{{ route('authors.destroy', $author->id) }}" method="POST" class="inline-block">
-                        @csrf
-                        @method('DELETE')
-                            <button type="submit" onclick="return confirm('Apakah Anda yakin ingin menghapus author ini?')" class="inline-flex items-center px-4 py-2 bg-red-500 text-white font-semibold text-xs uppercase rounded-md hover:bg-red-700">
-                                Delete
-                            </button>
-                    </form>
+                    <button id="delete-button" class="inline-flex items-center px-4 py-2 bg-red-500 text-white font-semibold text-xs uppercase rounded-md hover:bg-red-700" type="button">
+                        Delete
+                    </button>
+
+                    <script>
+                        document.getElementById('delete-button').addEventListener('click', function () {
+                            Swal.fire({
+                                title: 'Delete?',
+                                text: "Apakah anda ingin menghapus data ini?",
+                                icon: 'warning',
+                                showCancelButton: true,
+                                confirmButtonColor: '#d33',
+                                cancelButtonColor: '#3085d6',
+                                confirmButtonText: 'Iya',
+                                cancelButtonText: 'Tidak'
+                            }).then((result) => {
+                                if (result.isConfirmed) {
+                                    // Submit form via AJAX or by submitting the form normally
+                                    const form = document.createElement('form');
+                                    form.method = 'POST';
+                                    form.action = "{{ route('authors.destroy', $author->id) }}";
+
+                                    // Add CSRF token and method spoofing inputs
+                                    const csrfToken = document.createElement('input');
+                                    csrfToken.type = 'hidden';
+                                    csrfToken.name = '_token';
+                                    csrfToken.value = '{{ csrf_token() }}';
+                                    form.appendChild(csrfToken);
+
+                                    const methodField = document.createElement('input');
+                                    methodField.type = 'hidden';
+                                    methodField.name = '_method';
+                                    methodField.value = 'DELETE';
+                                    form.appendChild(methodField);
+
+                                    document.body.appendChild(form);
+                                    form.submit();
+                                }
+                            });
+                        });
+                    </script>
                 </div>
             </div>
             
